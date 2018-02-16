@@ -26,9 +26,7 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(myToolbar);
 
         final Intent intent = new Intent(getApplicationContext(), TutorsActivity.class);
-        //controlador();
         Button entry = (Button) findViewById(R.id.btnContinue);
-
         entry.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -126,7 +124,7 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(getApplicationContext(), message, Toast.LENGTH_SHORT).show();
     }
 
-    public void controlador(View view) {
+    public void btnClick(View view) {
         final Intent intent = new Intent(getApplicationContext(), TutorsActivity.class);
         Button entry = (Button) findViewById(R.id.btnContinue);
         entry.setOnClickListener(new View.OnClickListener() {
